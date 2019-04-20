@@ -17,7 +17,7 @@ const S = {
     margin: 0;
   `,
   Link: styled(Link)`
-    color: white;
+    color: ${props => props.theme.brandRed};
     textdecoration: none;
   `,
 };

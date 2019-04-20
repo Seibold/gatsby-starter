@@ -1,11 +1,12 @@
 import { createGlobalStyle } from "styled-components";
+import variables from "./variables";
 
 export const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: hsla(0, 0%, 0%, 0.8);
+    color: ${() => variables.brandGray};
     font-family: georgia, serif;
     font-weight: normal;
     word-wrap: break-word;
