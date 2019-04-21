@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import variables from "./variables";
 
-export const GlobalStyle = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
@@ -34,3 +34,5 @@ export const GlobalStyle = createGlobalStyle`
     line-height: 1.1;
   }
 `;
+
+export default GlobalStyle;

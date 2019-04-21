@@ -10,7 +10,8 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 import styled from "styled-components";
 
-import { GlobalStyle } from "../styles/theme";
+import GlobalStyle from "../styles/theme";
+import Header from "./header";
 
 const LayoutWrapper = styled.div`
   margin: 0 auto;
@@ -18,8 +19,6 @@ const LayoutWrapper = styled.div`
   padding: 0px 1.0875rem 1.45rem;
   paddingtop: 0;
 `;
-
-import Header from "./header";
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -38,7 +37,8 @@ const Layout = ({ children }) => (
         <LayoutWrapper>
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}
+            <span>©</span>
+            <span>{new Date().getFullYear()}</span>
             <a href="https://www.gatsbyjs.org">Gatsby</a>
           </footer>
         </LayoutWrapper>

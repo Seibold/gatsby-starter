@@ -4,8 +4,16 @@
   "settings": {
     "import/core-modules": ["gatsby"]
   },
+  "plugins": ["json"],
+  "env": {
+    "jest": true
+  },
   "globals": {
-    "graphql": true
+    "graphql": true,
+    "page": true,
+    "browser": true,
+    "context": true,
+    "jestPuppeteer": true
   },
   "rules": {
     "jsx-a11y/anchor-is-valid": [
